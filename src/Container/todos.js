@@ -55,7 +55,7 @@ class Todos extends Component{
 
         let updatedTodo = newTodoItems.map( todo => {
             if(todo.id === id)
-                todo.completed = true;
+                todo.completed = !todo.completed;
             return todo;
         });
 
